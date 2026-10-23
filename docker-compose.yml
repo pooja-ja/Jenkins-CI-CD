@@ -1,0 +1,9 @@
+services:
+
+  web:
+#    image: ${DOCKERHUB_USER}/github-actions-app:${DOCKER_TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "80:80"
