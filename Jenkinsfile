@@ -1,6 +1,9 @@
 pipeline {
     agent any
-    
+    triggers {
+        // Triggers the build when a change is pushed to GitHub
+        githubPush()
+    }
     environment{
          SONAR_HOME = tool "sonar"
     }
