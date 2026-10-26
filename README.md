@@ -46,3 +46,5 @@ push to main
 ├── test_app.py                 # pytest route tests
 └── CNAME                       # Custom domain for GitHub Pages
 ```
+The successful deployment on push to main branch is as below
+![snapshot](images/1.jpeg)
