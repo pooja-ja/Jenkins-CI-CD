@@ -31,20 +31,21 @@ push to main
 ```
 
 | # | Stages | What It Does |
-|---|---------|-----------------|-------------|
+|---|---------|-----------------|
 | * | [DevSecOps Pipeline]
-| 1| [Dependency Scan], `pip-audit`, vulnerability databases | Audits Python packages for known CVEs |
+| 1 | [Dependency Scan], `pip-audit`, vulnerability databases | Audits Python packages for known CVEs |
 | 2 | [Docker Lint] | Validates Dockerfile against best practices |
-| 3 | [Sonarqube scan] | SAST for code
-| 4 | [Tests](.github/workflows/tests.yml) | , `pytest`, Flask test client | Runs pytest against Flask routes (/, /health) |
-| 5| [Deploy to Server](.github/workflows/deploy-to-server.yml) | `workflow_call`, `appleboy/ssh-action`, `appleboy/scp-action`, remote Docker Compose | copies docker-compose, deploys the app |
+| 3 | [Sonarqube scan] | SAST for code |
+| 4 | [Tests] `pytest`, Flask test client | Runs pytest against Flask routes (/, /health) |
+| 5 | [Deploy to Server] | Runs docker-compose, deploys the app |
 
 ├── Jenkinsfile                 # Pipeline config
 ├── docker-compose.yml          # Compose config
 ├── index.html                  # Portfolio static site
 ├── requirements.txt            # Python dependencies
 ├── test_app.py                 # pytest route tests
-└── CNAME                       # Custom domain for GitHub Pages
-```
+└── CNAME                       # Custom domain for GitHub Pagg
+
 The successful deployment on push to main branch is as below
+
 ![snapshot](images/1.jpeg)
