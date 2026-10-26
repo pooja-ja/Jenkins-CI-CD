@@ -39,12 +39,6 @@ push to main
 | 4 | [Tests] `pytest`, Flask test client | Runs pytest against Flask routes (/, /health) |
 | 5 | [Deploy to Server] | Runs docker-compose, deploys the app |
 
-├── Jenkinsfile                 # Pipeline config
-├── docker-compose.yml          # Compose config
-├── index.html                  # Portfolio static site
-├── requirements.txt            # Python dependencies
-├── test_app.py                 # pytest route tests
-└── CNAME                       # Custom domain for GitHub Pagg
 
 The successful deployment on push to main branch is as below
 
