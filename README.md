@@ -1,6 +1,6 @@
 # Jenkins CI-CD
 
-A hands-on repo to learn GitHub Actions from scratch. Each workflow covers a real-world concept — start from the top and work your way down.
+A hands-on repo to learn Jenkins CI/CD from scratch.
 
 ## What's Inside
 
